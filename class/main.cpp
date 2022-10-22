@@ -1,9 +1,13 @@
-// main.cpp
+#include <iostream>
+#include "secondFile.h"
 
-#include "rectangle.h"
+using namespace std;
 
 int main()
 {
-  Rectangle rec;
 
+  myClass m;
+  cout << m.getNumber() <<endl;
+  m.func();
+  return 0;
 }
