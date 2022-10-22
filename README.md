@@ -1,3 +1,1 @@
-# Tiny-CPP-Examples
-
-- C++ Conceptual Examples.
+# C++ Conceptual Examples.
