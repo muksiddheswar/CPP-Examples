@@ -10,8 +10,12 @@ int main()
 	// Declaring string
 	string str;
 
+	str = "This is a string.";
+	cout << str << endl;
+
 	// Taking string input using getline()
 	getline(cin, str);
+	cout << str << endl;
 
 	// Displaying string
 	cout << "The initial string is : ";

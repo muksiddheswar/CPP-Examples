@@ -29,5 +29,11 @@ int main()
 		cout << *it1;
 	cout << endl;
 
+	cout << "The string using forward iterators is : ";
+	for (it = str.begin(); it != str.end(); it++)
+		cout << *it;
+	cout << endl;
+
+
 	return 0;
 }

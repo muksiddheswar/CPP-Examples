@@ -37,5 +37,8 @@ int main()
 	cout << "The new capacity after shrinking is : ";
 	cout << str.capacity() << endl;
 
+	str.reserve(100);
+	cout << str.capacity() << endl;
+
 	return 0;
 }
