@@ -22,4 +22,14 @@ int main()
 				<< " : "
 				<< i->second << '\n';
 	}
+
+	std::unordered_map<int, int>::const_iterator got = order.find (5);
+
+  if ( got == order.end() )
+    std::cout << "not found";
+  else
+    std::cout << got->first << " is " << got->second;
+
+  std::cout << std::endl;
+
 }
