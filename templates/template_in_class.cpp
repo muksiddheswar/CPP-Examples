@@ -9,6 +9,18 @@ template <typename T> void assign_val(T x)
         x.do_it();
     }
 
+template <typename T> void find_val(int i, const T& x)
+    {
+        // if (is_same<x, unordered_map<int, MyClass>::value)
+        //     cout << "MyClass";
+
+        auto& g = x.find(i);
+        // unordered_map<int, T>::const_iterator got = x.find (i);
+        // return (x > y) ? x : y;
+        // return x.do_it();
+        // x.do_it();
+    }
+
 
 class MyClass1 {       // The class
     public:             // Access specifier
@@ -94,9 +106,9 @@ int main()
     assign_val(myObj);
     assign_val(myObj1);
     
-    // unordered_map<int, MyClass> order_map;
-    // order_map[5] = myObj;
-    // find_val(5, order_map);
+    unordered_map<int, MyClass> order_map;
+    order_map[5] = myObj;
+    find_val(5, order_map);
     
 
 	return 0;
