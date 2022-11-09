@@ -13,12 +13,15 @@ class MyClass {       // The class
 
     void change_my_num1()
     {
-        change_value(& myNum1);
+        int i = change_value(& myNum1);
+        cout<< endl<<i;
+
     }
 
     void change_my_num2()
     {
-        change_value(& myNum2);
+        int i = change_value(& myNum2);
+        cout<< endl<<i;
     }
 
     int change_value(int* num )
