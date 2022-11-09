@@ -14,6 +14,7 @@ int main ()
 {
     string name = "Sid.";
     string pass = "pass";
+    cout << name << endl << pass;
     login(&name, &pass);
     cout << name << endl << pass;
 
