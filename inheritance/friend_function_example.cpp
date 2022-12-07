@@ -28,7 +28,7 @@ void show()
 	cout << "The default value of A::x = " << b.x;
 
 	// Can't access private member declared in class 'B'
-	cout << "The default value of B::y = " << b.y;
+	// cout << "The default value of B::y = " << b.y;
 }
 
 int main()
