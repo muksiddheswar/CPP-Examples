@@ -1,6 +1,6 @@
 // Print CPP version
 
-#include<iostream>
+#include <iostream>
 
 int main() {
     if (__cplusplus == 201703L) std::cout << "C++17\n";
