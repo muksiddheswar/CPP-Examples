@@ -7,7 +7,7 @@ struct cust
 	int p;
 	cust(int q) : p(q) {}
 	cust() = default;
-	//cust& operator=(const cust& that) = default;
+	// cust& operator=(const cust& that) = default;
 };
 
 int main()
@@ -20,7 +20,6 @@ int main()
 	// Works fine, doesn’t require constructor
 	var1 = new cust();
 
-	// Notice error if you comment this line
-	// cust* var = new cust(25);
+	cust* var = new cust(25);
 	return 0;
 }
