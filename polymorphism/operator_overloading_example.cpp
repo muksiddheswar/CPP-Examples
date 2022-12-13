@@ -26,6 +26,15 @@ public:
 		res.imag = imag + obj.imag;
 		return res;
 	}
+
+	Complex operator+(int i)
+	{
+		Complex res;
+		res.real = real + i;
+		res.imag = imag;
+		return res;
+	}
+
 	void print()
 	{
 	cout << real << " + i" <<
@@ -41,4 +50,7 @@ int main()
 	// An example call to "operator+"
 	Complex c3 = c1 + c2;
 	c3.print();
+
+	Complex c4 = c1 + 1;
+	c4.print();
 }
