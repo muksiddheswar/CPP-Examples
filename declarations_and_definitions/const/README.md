@@ -31,6 +31,11 @@ RULE: const binds left, unless there is nothing on the left, then it binds right
 https://stackoverflow.com/q/4949254/4168707
 https://stackoverflow.com/q/8091770/4168707
 
+## CONST Member Variable
+- CONST member  variables are possible.
+- They must be initialise within the class body.
+
+
 
 ## CONST Member Functions
 
