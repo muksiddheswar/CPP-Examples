@@ -10,8 +10,8 @@
 
 ###### Pointers
 ```
-    - Dangling pointers
-    - std::move
-    - Smart Pointers
+- Dangling pointers
+- std::move
+- Smart Pointers
 
 ```
