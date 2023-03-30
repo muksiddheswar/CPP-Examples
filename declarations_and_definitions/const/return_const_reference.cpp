@@ -29,6 +29,4 @@ int main()
    Date MyDate( 7, 4, 1998 );
    const int& i = MyDate.getMonth();
    // i += 1;  // Not possible.
-
-
 }
