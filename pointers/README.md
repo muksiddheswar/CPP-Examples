@@ -14,3 +14,13 @@ Wild pointer is a pointer that was declared but never initialised.
 **Preventions**
 In OO languages with `garbage collection`, dangling references are prevented by only destroying objects that are unreachable, meaning they do not have any incoming pointers. 
 
+### Pointers vs Reference
+
+**Pointer** "stores the address of i".
+`int *ptr = &i; `
+
+**Reference** = Alias for i.
+`int &ref = i;`
+
+1. References need to be initialised in one line.
+2. 
