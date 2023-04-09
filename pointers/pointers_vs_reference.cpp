@@ -5,6 +5,8 @@ int main()
 {
     int a = 10;
 
+    // -------------------
+    // -- INTIALISATION -- 
     int *pointer1 = &a;
 
     int *pointer2;
@@ -18,6 +20,13 @@ int main()
     reference2 = a; 
     */
 
+    // -------------------
+    // -- REASSIGNMENT --
+    int b = 6;
+    pointer2 = &b;
+
+    // -- NOT POSSIBLE --
+    // &reference1 = b; // Not a modifiable lvalue.
 
     return 0;
 }

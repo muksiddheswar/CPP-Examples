@@ -23,4 +23,7 @@ In OO languages with `garbage collection`, dangling references are prevented by 
 `int &ref = i;`
 
 1. References need to be initialised in one line.
-2. 
+   Reference variable needs an initialiser.
+
+2. Pointers can be re-assgined.
+   Implementation of data structures like linked list, tree.
