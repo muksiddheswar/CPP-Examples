@@ -27,3 +27,7 @@ In OO languages with `garbage collection`, dangling references are prevented by 
 
 2. Pointers can be re-assgined.
    Implementation of data structures like linked list, tree.
+
+3. Pointers have their own memory address, size in the stack and can be assigned a **NULL** value.
+
+4. Pointer to a pointer possible.
