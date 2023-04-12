@@ -19,6 +19,8 @@ int main()
     reference2 = a; 
     */
 
+//    std::reference_wrapper<int> reference2;
+
     // --------------------- REASSIGNMENT ---------------------
     int b = 6;
     pointer2 = &b;
@@ -28,7 +30,7 @@ int main()
 
     // --------------------- MEMORY ---------------------
     cout << &pointer1 << endl << &a << endl;
-    cout << &reference1 << endl << &a;
+    cout << &reference1 << endl << &a << endl;
 
     // --------------------- NULL VALUE ---------------------
     pointer1 = NULL;
@@ -38,6 +40,16 @@ int main()
 
     // Not possible
     //int && reference3 = reference1;
+
+    *pointer2 += 1; // This will adjust a.
+    pointer2 += 1; // This will increase the memory address being pointed to.
+    cout << b << endl;
+
+    reference1 += 1;
+    // Not possible
+    // &reference1 += 1;
+
+    cout << a << endl;
 
     return 0;
 }
