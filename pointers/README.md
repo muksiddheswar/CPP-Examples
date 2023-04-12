@@ -31,3 +31,20 @@ In OO languages with `garbage collection`, dangling references are prevented by 
 3. Pointers have their own memory address, size in the stack and can be assigned a **NULL** value.
 
 4. Pointer to a pointer possible.
+
+
+Consider the following examples:
+
+`void func( int& a)`
+`void func( int* a)`
+
+**Biggest diff:**
+Reference can never be null.
+So this as a parameter will have a value of a specific type.
+
+Pointer does not give this gurantee.
+The function needs to check for null value.
+So the context needs to be known about what to do in case the value is null.
+
+So a reference is easier to handle.
+If the parameter will always have a value, then pass by reference.
