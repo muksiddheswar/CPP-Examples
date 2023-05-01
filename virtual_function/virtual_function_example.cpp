@@ -30,10 +30,24 @@ public:
 	}
 };
 
+class derived2 : public base {
+public:
+	void print()
+	{
+		cout << "print second derived class\n";
+	}
+
+	void show()
+	{
+		cout << "show second derived class\n";
+	}
+};
+
 int main()
 {
 	base *bptr;
 	derived d;
+	derived2 d2;
 	bptr = &d;
 
 	// Virtual function, binded at runtime
@@ -41,6 +55,11 @@ int main()
 
 	// Non-virtual function, binded at compile time
 	bptr->show();
+
+	bptr = &d2;
+	bptr->print(); // This is where the vtable lookup happens.
+
+	d.print(); // Compiletime binding.
 	
 	return 0;
 }
