@@ -23,6 +23,8 @@ We can assign a different object by removing the current object from the pointer
 
 <img width="295" alt="uniquePtr" src="https://github.com/muksiddheswar/CPP-Examples/assets/17706548/ea371ca4-adf9-4bfe-91bf-aac6f093ae29">
 
+1-to-1 relationship between a pointer and its allocated object on the heap.
+
 The constructor of unique_ptr<T> accepts a raw pointer to an object of type XXX.
 
 <br>
@@ -43,3 +45,7 @@ Pointer will not have a stronghold on the object.
 Reason: Suppose pointers are holding the object and requesting for other objects then they may form a Deadlock. 
 
 <img width="446" alt="weakPtr" src="https://github.com/muksiddheswar/CPP-Examples/assets/17706548/f76a57e9-98fe-4d5a-bb37-f6cc48a9782d">
+
+Lock increases the reference count. (check)
+Lock needs to be used before accessing a weak pointer.
+Lock returns a (shared) pointer.
