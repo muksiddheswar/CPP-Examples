@@ -25,7 +25,8 @@ We can assign a different object by removing the current object from the pointer
 
 1-to-1 relationship between a pointer and its allocated object on the heap.
 
-The constructor of unique_ptr<T> accepts a raw pointer to an object of type XXX.
+`// unique_ptr<Rectangle> P2 (P1.get()); // VERY WRONG THING TO DO!!`
+This will lead to 2 unique pointers pointing to the same resource.
 
 <br>
 
