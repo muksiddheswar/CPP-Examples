@@ -40,7 +40,8 @@ int main()
     P1 = move(P2);
     cout<<P1->area()<<endl;
 
-    // P2 = P1; Not possible; copy function is deleted.
+    // P2 = P1; Not possible; copy function is
+    // unique_ptr<Rectangle> P2 (P1.get()); // VERY WRONG THING TO DO!!
 
 	return 0;
 }
